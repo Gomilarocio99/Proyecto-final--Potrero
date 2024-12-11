@@ -1,0 +1,267 @@
+/* Estilos comunes */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: "Orbitron", serif;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden; 
+    background-image: url('../img/fondo\ -\ copia.png');  
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100vh;
+}
+
+img {
+    max-width: 300px;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+/* Estilos header */
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f1460de7;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* Estilos navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(161, 52, 19, 0.418);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #f3f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f8f6f63f;
+    color: #5D2A42;
+}
+
+@media (max-width:800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a {
+        text-align: center;
+    }
+}
+
+/* Estilos principales */
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: 0;
+}
+
+aside {
+    flex-basis: 25%;
+    background-color: rgba(161, 52, 19, 0.418);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    flex-basis: 75%;
+    background-color: transparent;
+    padding: 20px 40px 20px 40px;
+}
+
+@media (max-width:800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+/* Estilos aside */
+.image img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;  
+    transition: 0.5s all ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.07);
+}
+
+.asideTitle {
+    text-decoration: underline;
+}
+
+@media (max-width:800px) {
+    .image img {
+        width: 60%;
+    }
+}
+
+/* Estilos main */
+.card-img-top, main img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+main h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #e7dddb;
+    text-align: center;
+}
+
+main h5 {
+    text-align: right;
+}
+
+main p {
+    font-style: italic;
+}
+
+main .leerMas, .verMas {
+    background-color: #b93f06;
+    color: #FFF9EC;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+}
+
+main .leerMas:hover, .verMas:hover {
+    background-color: #FCB1A6;
+    color: #b93f06;
+}
+
+/* Estilos footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: #FCB1A6;
+}
+
+/* Estilos formulario */
+form {
+    padding: 50px;
+    background-color: #e7530e65;
+    text-align: center;
+    height: 100%;
+}
+
+label {
+    background-color: #750b0844;
+    color: #fcf4f2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 40vw 30vw;
+    gap: 15px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+}
+
+@media (max-width:800px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/* Estilos carrusel */
+.carousel-item img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media (max-width:800px) {
+    .carousel-item img {
+        object-fit: contain;
+        height: auto;
+    }
+    .carousel-inner {
+        object-fit: contain;
+    }
+}
+/* Estilos cartas */
+.card-img-top{
+    height: 400px;
+    object-fit: cover;
+}
+.card-title{
+text-align: center;
+font-size: 25px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #d4f5e3;
+}
+
+/* Iconos del footer */
+footer a {
+    margin: 0 10px;
+    color: #FFF9EC;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FCB1A6;
+}
+
+footer i {
+    margin-right: 5px;
+}
