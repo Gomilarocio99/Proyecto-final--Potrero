@@ -15,7 +15,6 @@ html, body {
     background-size: cover;  
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -236,14 +235,16 @@ legend {
         object-fit: contain;
     }
 }
+
 /* Estilos cartas */
-.card-img-top{
+.card-img-top {
     height: 400px;
     object-fit: cover;
 }
-.card-title{
-text-align: center;
-font-size: 25px;
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
 }
 
 .whatsapp-btn:hover {
